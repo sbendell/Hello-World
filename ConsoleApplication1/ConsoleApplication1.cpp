@@ -6,6 +6,10 @@
 
 using namespace std;
 
+void Product(int a, int b) {
+	cout << "Product of a and b: " << a * b;
+}
+
 int main() {
 	cout << "Hello" << ' ' << "World" << "\n";
 	std::cout << "Type 2 numbers, i'll calculate and display the sum and product." << "\n";
