@@ -10,7 +10,7 @@ int Add(int a, int b) {
 	return a + b;
 }
 
-int minus(int a, int b) {
+int Minus(int a, int b) {
 	return a - b;
 }
 
@@ -22,16 +22,39 @@ double Quotient(double a, double b) {
 	return a / b;
 }
 
-int main() {
-	cout << "Hello" << ' ' << "World" << "\n";
-	std::cout << "Type 2 numbers, i'll calculate and display the sum and product." << "\n";
-	int a, b;
-	cin >> a;
-	cin >> b;
-	Product(a, b);
-	cout << "\nQuotient of a and b: " << Quotient(a, b);
-	cin >> b;
+void Calculator(int a, int b, char c) {
+	switch (c)
+	{
+	case '+':
+		cout << "Addition of a and b: " << Add(a, b);
+		break;
+	case '-':
+		cout << "Subtraction of a and b: " << Minus(a, b);
+		break;
+	case '*':
+		Product(a, b);
+		break;
+	case '/':
+		cout << "Division of a and b: " << Quotient(a, b);
+		break;
+	default:
+		cout << "Invalid operator was provided.";
+		break;
+	}
+}
 
+int main() {
+	while (true) {
+		cout << "Hello" << ' ' << "World" << "\n";
+		std::cout << "Type 2 numbers, i'll calculate and display the sum and product." << "\n";
+		int a, b;
+		char c;
+		cin >> a;
+		cin >> b;
+		cout << "Type operator.";
+		cin >> c;
+		Calculator(a, b, c);
+	}
 	return 0;
 }
 
