@@ -13,7 +13,7 @@ int main() {
 	cin >> a;
 	cin >> b;
 	cout << "Sum of a and b: " << a + b << "\n" << "Product of a and b: " << a * b;
-	cin >> a;
+	cin >> b;
 
 	return 0;
 }
