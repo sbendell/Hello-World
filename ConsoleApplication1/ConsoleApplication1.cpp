@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include "MontyHallParadox.h"
 
 using namespace std;
 
@@ -44,7 +45,7 @@ void Calculator(int a, int b, char c) {
 }
 
 int main() {
-	while (true) {
+	/*while (true) {
 		std::cout << "Type 2 numbers." << "\n";
 		int a, b;
 		char c;
@@ -53,7 +54,13 @@ int main() {
 		cout << "Type operator.";
 		cin >> c;
 		Calculator(a, b, c);
-	}
+	}*/
+	double swapWinPercent = WinPercentage(true, 1000);
+	double stayWinPercent = WinPercentage(false, 1000);
+
+	cout << "Stay Win Percent:\n" << stayWinPercent * 100 << "%\nSwap Win Percent:\n" << swapWinPercent * 100 << "%";
+	int a;
+	cin >> a;
 	return 0;
 }
 
