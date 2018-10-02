@@ -6,6 +6,14 @@
 
 using namespace std;
 
+int Add(int a, int b) {
+	return a + b;
+}
+
+int minus(int a, int b) {
+	return a - b;
+}
+
 void Product(int a, int b) {
 	cout << "Product of a and b: " << a * b;
 }
