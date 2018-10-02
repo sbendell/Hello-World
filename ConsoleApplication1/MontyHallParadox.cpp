@@ -25,8 +25,8 @@ double WinPercentage(bool Swap, double Attempts) {
 	for (int i = 0; i < Attempts; i++) {
 		int prizeDoor = PickDoor();
 		int pickedDoor = PickDoor();
-		int shownDoor = PickOtherDoor(prizeDoor, pickedDoor);
 		if (Swap) {
+			int shownDoor = PickOtherDoor(prizeDoor, pickedDoor);
 			pickedDoor = PickOtherDoor(pickedDoor, shownDoor);
 		}
 		if (pickedDoor == prizeDoor) {
