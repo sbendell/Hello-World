@@ -45,8 +45,7 @@ void Calculator(int a, int b, char c) {
 
 int main() {
 	while (true) {
-		cout << "Hello" << ' ' << "World" << "\n";
-		std::cout << "Type 2 numbers, i'll calculate and display the sum and product." << "\n";
+		std::cout << "Type 2 numbers." << "\n";
 		int a, b;
 		char c;
 		cin >> a;
