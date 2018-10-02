@@ -6,16 +6,14 @@
 
 using namespace std;
 
-int someFunc(int x, int y) {
-	return x + (x*y);
-}
-
 int main() {
 	cout << "Hello" << ' ' << "World" << "\n";
-	std::cout << "What is 7 + 2?" << "\n";
-	int c = someFunc(5, 6);
-	int x;
-	cin >> x;
+	std::cout << "Type 2 numbers, i'll calculate and display the sum and product." << "\n";
+	int a, b;
+	cin >> a;
+	cin >> b;
+	cout << "Sum of a and b: " << a + b << "\n" << "Product of a and b: " << a * b;
+	cin >> a;
 
 	return 0;
 }
