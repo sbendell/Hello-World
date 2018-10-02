@@ -16,7 +16,7 @@ int main() {
 	int a, b;
 	cin >> a;
 	cin >> b;
-	cout << "Sum of a and b: " << a + b << "\n" << "Product of a and b: " << a * b;
+	Product(a, b);
 	cin >> b;
 
 	return 0;
